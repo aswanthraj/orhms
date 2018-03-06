@@ -8,7 +8,9 @@ import org.testng.annotations.Test;
 public class DashboardTest extends AdminTest {
   @Test(priority=2)
   public void b() {
-	  driver.findElement(By.xpath("html/body/div[1]/div[2]/ul/li[7]/a/b")).click();
+	  driver.findElement(By.xpath("//a[@id='menu_dashboard_index']")).click();
+	 
+	 
 	
   
   }

@@ -8,7 +8,8 @@ import org.testng.annotations.Test;
 public class AdminTest extends loginTest  {
   @Test(priority=1)
   public void a() throws InterruptedException {
-	  driver.findElement(By.xpath("//b[text()='Admin']")).click();
+	  Thread.sleep(2000);
+	  driver.findElement(By.xpath("html/body/div[1]/div[2]/ul/li[1]/a/b")).click();
 	  driver.findElement(By.xpath("//input[@id='searchSystemUser_userName']")).sendKeys("00001");
 	  WebElement a1=driver.findElement(By.xpath("//select[@id='searchSystemUser_userType']"));
 	  Select a2=new Select(a1);
@@ -17,6 +18,8 @@ public class AdminTest extends loginTest  {
 	  a3.selectByValue("");
 	  Thread.sleep(3000);
 	  driver.findElement(By.xpath("//input[@id=\"searchBtn\"]")).click();
+	
+	   
 	//  driver.navigate().back();
   }
 }

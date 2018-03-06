@@ -28,7 +28,10 @@ public class AddTest extends DashboardTest{
 	  
 	 }
 	  
+	  
 }
+	  driver.close();
+	  
 	 
 }
 }
